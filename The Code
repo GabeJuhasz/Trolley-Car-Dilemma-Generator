@@ -1,0 +1,46 @@
+import random
+
+maxTracks = random.randint(1,3)
+people = ["trolly car","person","fat man","lever"]
+action = ["push","tie up","untie"]
+consequence = ["be killed","get tied up","get untied","be saved"]
+state = ["tied up","on a bridge","moving at dangerous speeds","with a lever"]
+
+
+#, end=""
+print(" There is a track with a ", end="")
+
+for i in range(1,random.randint(1,3)):
+    print(people[random.randint(0,2)], end="")
+    print(" whos is ", end="")
+    print(state[random.randint(0, 3)], end="")
+    print(", and a ", end="")
+    
+print(people[random.randint(0, 2)], end="")
+print(" whos is ", end="")
+print(state[random.randint(0, 3)], end="")
+print(".", end="")   
+
+print("There is a ", end="")
+print(people[random.randint(0, 2)], end="")
+print(" that is ", end="")
+print(state[random.randint(0, 3)], end="")
+print(" rushing down the tracks. The Tracks diverg into 2 more tracks.", end="")
+
+print(" You can ", end="")
+print(action[random.randint(0, 2)], end="")
+print(" the ", end="")
+print(people[random.randint(0, 2)], end="")
+print(" but the ", end="")
+print(people[random.randint(0, 2)], end="")
+print(" will ", end="")
+print(consequence[random.randint(0, 2)], end="")
+print(" or ", end="")
+print(action[random.randint(0, 2)], end="")
+print(" the ", end="")
+print(people[random.randint(0, 2)], end="")
+print(" but the ", end="")
+print(people[random.randint(0, 2)], end="")
+print(" will ", end="")
+print(consequence[random.randint(0, 2)], end="")
+print(".", end="")
